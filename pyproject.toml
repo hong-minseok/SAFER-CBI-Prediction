@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "safer-cbi"
+version = "0.1.0"
+description = "Calculation-source package for SAFER-CBI"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dynamic = ["dependencies"]
+
+[tool.setuptools.packages.find]
+include = ["safer_cbi*"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.package-data]
+"safer_cbi.analysis" = ["lmm_fit.R"]

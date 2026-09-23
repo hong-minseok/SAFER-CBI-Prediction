@@ -1,0 +1,34 @@
+# Protected inputs and generated artifacts
+/data/
+/private/
+/analysis/inputs/
+/analysis/reference/
+/analysis/results/
+/analysis/checkpoint/
+/modeling/model_runs/
+/modeling/runs/
+/modeling/artifacts/
+/modeling/checkpoints/
+/modeling/results/
+/modeling/experiments/
+/preprocessing/artifacts/
+**/fold_checkpoints/
+**/optuna_studies/
+
+# Row-level and binary artifacts
+*.csv
+*.parquet
+*.xlsx
+*.pth
+*.pkl
+
+# Python, notebook, R, and OS caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+*.ipynb
+.Rhistory
+.RData
+.DS_Store

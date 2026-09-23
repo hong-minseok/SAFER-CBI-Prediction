@@ -1,0 +1,9 @@
+# R runtime for analysis scripts.
+#
+# tools/install_r_packages.R installs the exact CRAN releases after this base
+# environment is created.
+name: R
+channels:
+  - conda-forge
+dependencies:
+  - r-base=4.6.1
